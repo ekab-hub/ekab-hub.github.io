@@ -272,7 +272,8 @@ main {
 
 /* Experience Cards */
 .experience-card,
-.education-card {
+.education-card,
+.certification-card {
     padding: 1.5rem;
 }
 
@@ -302,7 +303,8 @@ main {
 }
 
 .job-title,
-.degree-title {
+.degree-title,
+.cert-title {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
@@ -310,7 +312,8 @@ main {
 }
 
 .company-name,
-.institution-name {
+.institution-name,
+.cert-institution {
     font-size: 1rem;
     color: var(--text-secondary);
     margin-bottom: 0.25rem;
@@ -318,7 +321,8 @@ main {
 }
 
 .job-period,
-.education-period {
+.education-period,
+.cert-period {
     font-size: 0.85rem;
     color: var(--text-secondary);
 }
@@ -398,82 +402,25 @@ main {
     transform: translateY(-2px);
 }
 
-/* Projects Grid */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
-
-.project-card {
-    padding: 0;
-    overflow: hidden;
-}
-
-.project-image {
-    width: 100%;
-    height: 200px;
-    background-color: var(--bg-tertiary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.image-placeholder {
-    font-size: 3rem;
-    color: var(--text-tertiary);
-}
-
-.project-card .card-content {
-    padding: 1.5rem;
-}
-
-.project-name {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
+/* Certifications */
+.cert-description {
     color: var(--text-primary);
-}
-
-.project-description {
-    font-size: 0.95rem;
-    color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: 1rem;
 }
 
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.project-tag {
-    padding: 0.35rem 0.75rem;
-    background-color: var(--bg-tertiary);
-    color: var(--text-secondary);
-    border-radius: 12px;
-    font-size: 0.8rem;
-    border: 1px solid var(--border-color);
-}
-
-.project-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.project-link {
+.cert-link {
     color: var(--instagram-blue);
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
     transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.project-link:hover {
+.cert-link:hover {
     color: var(--instagram-blue-hover);
     text-decoration: underline;
 }
@@ -582,10 +529,6 @@ footer {
 
     .profile-contact {
         justify-content: center;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
     }
 
     .additional-grid {
